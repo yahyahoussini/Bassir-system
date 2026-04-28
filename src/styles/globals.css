@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Outfit:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+/* ============================================
+   BRAND CSS VARIABLES
+   ============================================ */
+:root {
+  --teal: #00C9B1;
+  --teal-dark: #00A896;
+  --teal-light: #E6FAF8;
+  --charcoal: #0D0D0D;
+  --slate: #30323A;
+  --stone: #828394;
+  --cloud: #EBECF0;
+  --white: #FFFFFF;
+  --font-display: 'Big Shoulders Display', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+  --font-arabic: 'Noto Sans Arabic', sans-serif;
+}
+
+/* ============================================
+   RTL / ARABIC SUPPORT
+   ============================================ */
+[dir='rtl'] {
+  font-family: var(--font-arabic), sans-serif;
+}
+
+[dir='rtl'] .font-display,
+[dir='rtl'] h1,
+[dir='rtl'] h2,
+[dir='rtl'] h3,
+[dir='rtl'] h4 {
+  font-family: var(--font-arabic), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+[dir='rtl'] .font-mono {
+  font-family: 'Geist Mono', monospace;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Fix for Arabic number display */
+[dir='rtl'] .font-mono.numbers {
+  direction: ltr;
+  display: inline-block;
+}
+
+/* RTL accent-left becomes accent-right */
+[dir='rtl'] .accent-left {
+  border-left: none;
+  border-right: 3px solid var(--teal);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* RTL card hover arrow */
+[dir='rtl'] .group-hover\:translate-x-1 {
+  --tw-translate-x: -0.25rem;
+}
+
+/* ============================================
+   ZELLIGE MICRO-PATTERN
+   ============================================ */
+.zellige-divider {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300C9B1' fill-opacity='0.04'%3E%3Cpath d='M20 0l20 20-20 20L0 20z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 40px 40px;
+}
+
+/* ============================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-children > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-children.visible > *:nth-child(1) { opacity:1; transform:translateY(0); transition-delay: 0.1s; }
+.reveal-children.visible > *:nth-child(2) { opacity:1; transform:translateY(0); transition-delay: 0.2s; }
+.reveal-children.visible > *:nth-child(3) { opacity:1; transform:translateY(0); transition-delay: 0.3s; }
+.reveal-children.visible > *:nth-child(4) { opacity:1; transform:translateY(0); transition-delay: 0.4s; }
+.reveal-children.visible > *:nth-child(5) { opacity:1; transform:translateY(0); transition-delay: 0.5s; }
+.reveal-children.visible > *:nth-child(6) { opacity:1; transform:translateY(0); transition-delay: 0.6s; }
+.reveal-children.visible > *:nth-child(7) { opacity:1; transform:translateY(0); transition-delay: 0.7s; }
+.reveal-children.visible > *:nth-child(8) { opacity:1; transform:translateY(0); transition-delay: 0.8s; }
+
+/* ============================================
+   WHATSAPP PULSE
+   ============================================ */
+.wa-pulse {
+  animation: pulseTeal 2s ease-in-out infinite;
+}
+
+@keyframes pulseTeal {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+}
+
+/* ============================================
+   TRUST BAR MARQUEE
+   ============================================ */
+.marquee-track {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============================================
+   CARD HOVER
+   ============================================ */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 201, 177, 0.15);
+}
+
+/* ============================================
+   TEAL UNDERLINE ACCENT
+   ============================================ */
+.teal-underline {
+  position: relative;
+}
+.teal-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--teal);
+  border-radius: 2px;
+}
+
+/* ============================================
+   ARTICLE PROSE STYLES
+   ============================================ */
+.prose-bassir h2 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--charcoal);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-bassir h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: var(--charcoal);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-bassir p {
+  font-family: var(--font-body);
+  color: var(--slate);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.prose-bassir ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-bassir li {
+  font-family: var(--font-body);
+  color: var(--slate);
+  line-height: 1.75;
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+}
+
+[dir='rtl'] .prose-bassir ul {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+/* ============================================
+   FOCUS & SELECTION
+   ============================================ */
+*:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: rgba(0, 201, 177, 0.2);
+  color: var(--charcoal);
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--cloud); }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--teal-dark); }
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  .no-print, header, footer, .wa-pulse { display: none !important; }
+  body { font-family: var(--font-body); color: #000; }
+}

@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "software": "Logiciel",
+    "products": "Produits",
+    "rfid": "Hammam & Piscine",
+    "pricing": "Tarifs",
+    "blog": "Blog",
+    "contact": "Contact",
+    "demo": "Demander une démo",
+    "client": "Espace client"
+  },
+  "common": {
+    "whatsapp": "WhatsApp",
+    "call": "Appeler",
+    "demo_cta": "Demander une démo gratuite",
+    "contact_cta": "Nous contacter",
+    "learn_more": "En savoir plus",
+    "see_all": "Voir tout",
+    "read_more": "Lire la suite",
+    "back": "Retour",
+    "submit": "Envoyer",
+    "loading": "Chargement...",
+    "success": "Envoyé avec succès !",
+    "error": "Une erreur est survenue.",
+    "phone": "06 61 41 55 78",
+    "phone2": "06 15 08 72 13",
+    "address": "Casablanca, Maroc",
+    "hours": "Lun–Sam : 09:00–18:00",
+    "tagline": "Solutions de Caisse & Logiciel POS",
+    "made_in_morocco": "Fait au Maroc 🇲🇦"
+  },
+  "hero": {
+    "badge": "Logiciel marocain · Licence à vie",
+    "headline_1": "Le logiciel POS",
+    "headline_2": "fait au Maroc,",
+    "headline_3": "pour le Maroc.",
+    "subheadline": "Interface 100% arabe · Pas d'abonnement · Installation partout au Maroc",
+    "cta_primary": "Demander une démo",
+    "cta_secondary": "Voir les produits"
+  },
+  "trust": {
+    "arabic": "Interface 100% Arabe",
+    "licence": "Licence à vie",
+    "install": "Installation partout au Maroc",
+    "support": "Support humain",
+    "morocco": "Fait au Maroc",
+    "nosubscription": "Aucun abonnement"
+  },
+  "features": {
+    "title": "Tout ce dont votre commerce a besoin",
+    "subtitle": "Un seul système. Un seul interlocuteur.",
+    "arabic_ui": {
+      "title": "Interface 100% Arabe",
+      "desc": "Conçu pour le commerce marocain, pas traduit. Login par code PIN sécurisé."
+    },
+    "licence": {
+      "title": "Licence à vie",
+      "desc": "Payez une fois. Utilisez à vie. Aucun frais mensuel, aucune surprise."
+    },
+    "dual_screen": {
+      "title": "Terminal Double Écran",
+      "desc": "Votre client voit son ticket en temps réel. Votre caissier gère tout."
+    },
+    "rfid": {
+      "title": "RFID Hammam & Piscine",
+      "desc": "Accès contrôlé et paiement cashless pour hammam, piscine et salle de sport."
+    },
+    "scale": {
+      "title": "Balance Connectée",
+      "desc": "Pesez, scannez, encaissez. Zéro saisie manuelle, zéro erreur."
+    },
+    "support": {
+      "title": "Support Humain",
+      "desc": "Une équipe locale qui répond. Même après l'installation."
+    }
+  },
+  "cities": {
+    "title": "Installation partout au Maroc",
+    "subtitle": "Notre équipe se déplace chez vous dans les 24-48h."
+  },
+  "testimonials": {
+    "title": "Ils nous font confiance",
+    "subtitle": "Des commerçants marocains, de vraies expériences."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur Bassir System."
+  },
+  "cta_section": {
+    "title": "Prêt à digitaliser votre commerce ?",
+    "subtitle": "Un appel. On s'occupe du reste.",
+    "primary": "Demander une démo gratuite",
+    "secondary": "Appelez-nous : 06 61 41 55 78"
+  },
+  "footer": {
+    "description": "Logiciel POS marocain — Interface 100% arabe — Licence à vie — Installation partout au Maroc.",
+    "links": "Liens",
+    "products_label": "Produits",
+    "contact_label": "Contact",
+    "legal": "© 2025 Bassir System. Tous droits réservés.",
+    "cities_title": "Villes couvertes"
+  },
+  "demo": {
+    "title": "Demander une démo gratuite",
+    "subtitle": "Remplissez le formulaire. Nous vous rappelons dans les 2h.",
+    "name": "Prénom",
+    "phone": "Téléphone",
+    "city": "Ville",
+    "business_type": "Type de commerce",
+    "message": "Message (optionnel)",
+    "submit": "Envoyer ma demande",
+    "success_title": "Demande reçue !",
+    "success_msg": "Nous vous rappelons dans les 2 heures. WhatsApp : 06 61 41 55 78",
+    "business_types": {
+      "epicerie": "Épicerie / Supérette",
+      "boucherie": "Boucherie",
+      "hammam": "Hammam",
+      "piscine": "Piscine",
+      "sport": "Salle de sport",
+      "pharmacie": "Pharmacie",
+      "autre": "Autre"
+    },
+    "cities": ["Casablanca","Rabat","Marrakech","Fès","Tanger","Agadir","Meknès","Oujda","Tétouan","Kenitra","Settat","Autre"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Bassir System",
+  "short_name": "Bassir",
+  "description": "Logiciel POS Maroc — Interface 100% Arabe — Licence à vie",
+  "start_url": "/fr",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#00C9B1",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity"],
+  "lang": "fr-MA",
+  "dir": "ltr"
+}

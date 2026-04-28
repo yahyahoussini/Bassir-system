@@ -1,0 +1,32 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /client
+Disallow: /api
+
+# GPTBot
+User-agent: GPTBot
+Allow: /
+
+# ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Host
+Host: https://bassir-system.ma
+
+# Sitemaps
+Sitemap: https://bassir-system.ma/sitemap.xml
